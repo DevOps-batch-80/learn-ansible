@@ -4,9 +4,8 @@
     URL: vars.google.com
   vars_files:
     - sample-vars.yml
-
   tasks:
     - name: print URL
       ansible.builtin.debug:
-        msg: "URL - {{ URL }}, URL1 -{{ URL1 }}"
+        msg: "URL - {{ URL }}, URL1 - {{ URL1 }}"
 
