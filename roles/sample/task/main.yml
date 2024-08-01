@@ -2,3 +2,8 @@
   ansible.builtin.debug:
     msg: Hello world
 
+- name: print
+  ansible.builtin.debug:
+    msg: "URL2 - {{ URL2 }} URL3 - {{ URL3 }}"
+
+

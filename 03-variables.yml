@@ -1,4 +1,4 @@
----
+
 - name: Demo on variables
   hosts: localhost
   vars:
@@ -10,3 +10,5 @@
       ansible.builtin.debug:
         msg: "URL - {{ URL }}, URL1 - {{ URL1 }}"
 
+  roles:
+    - sample
