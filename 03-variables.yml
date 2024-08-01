@@ -1,9 +1,12 @@
 - name: Demo on variables
-  hosts: all
+  hosts: localhost
   vars:
-    URL: google.com
+    URL:  vars.google.com
+  vars_files:
+    - sample-vars.yml
+
   tasks:
     - name: print URL
       ansible.builtin.debug:
-        msg: "URL = {{ URL }}"
+        msg: "URL - {{ URL }}, URL1 -{{ URL1 }}"
 
